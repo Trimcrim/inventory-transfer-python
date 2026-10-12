@@ -1,5 +1,9 @@
 # Inventory Transfer Service (Python)
 
+This is Zunft's backend assignment: improve an inherited warehouse transfer
+service. Choose **one** backend language version; you only need to submit one
+repository. The Zunft scope and submission rules below apply to this exercise.
+
 ## The situation
 
 You have just joined the warehouse team. This service moves stock of a
@@ -171,55 +175,51 @@ the `BASE_URL` environment variable.
    seconds and then fail. After a restart the service works again, for a
    while.
 
-## Your task
+## Zunft scope
 
-1. **Reproduce** both problems on your machine.
-2. **Find the causes.** There may be more than one cause.
-3. **Explain why** the problems only appear under load, and not when one
-   developer tests the service by hand.
-4. **Prioritize fixes.** Make focused code changes and verify them with
-   reproducible checks or tests, to the extent reached within the timebox.
+1. Run the service and reproduce the issues using the provided scripts.
+2. Investigate the root causes; there may be more than one bug. Explain why ordinary tests miss the behavior.
+3. Prioritize fixes, make focused code changes, and verify them with reproducible checks or tests.
+4. Describe any refactoring, monitoring, or safeguards you would consider, and why.
 
-You are free to change anything: the code, the scripts, the database, the
-configuration. You can add logging, tests or tools.
-
-## Time
-
-Plan for **2–3 hours total**, including setup, investigation, implementation,
-and notes. Stop by three hours and submit what you have.
-
-**Full completion is not expected. An honest partial answer is better than a
-complete answer that you cannot explain.** Record blockers, hypotheses,
+You do not need to find or fix every issue. Record blockers, hypotheses,
 unsuccessful attempts, and unfinished work.
+
+## Timebox
+
+Timebox your work to **2–3 hours**, including setup, investigation,
+implementation, and notes. Stop by three hours and submit what you have.
+**Full completion is not expected. An honest thinking log is more valuable
+than completing every task without transparency.**
 
 ## AI tools
 
-You may use AI tools (ChatGPT, Claude, Copilot and others). After you hand in
-your work, the next step is a call where you explain your reasoning to us.
-Anything that you cannot explain on the call is worth nothing, so make sure
-you understand every finding and every line of code you hand in. Please also
-tell us how you used AI.
+AI tools are allowed. Explain what you delegated, accepted or rejected, and
+how you checked it. Be ready to explain your reasoning and demonstrate the
+changed behavior in a follow-up interview.
 
-## What to hand in
+## Submission
 
-One file, `NOTES.md`, in the root of the repository, with these parts:
+Clone the assignment repository into your account and submit your public
+cloned repository (or a patch), with code changes to the extent reached
+within the timebox. Do not send exercise solutions as pull requests to the
+upstream repository.
 
-1. **What you found** – each problem and its cause.
-2. **How to reproduce it** – the exact steps or commands.
-3. **Why it only shows under load** – in your own words.
-4. **The fix you propose** – and why you chose it over other options.
-5. **How to catch this earlier in production** – what you would add
-   (logging, metrics, alerts, tests).
-6. **What you did not get to** – and what you would do with more time.
+Include concise notes in `NOTES.md` (alternatively an **optional screen
+recording with your voice comments**) covering:
 
-Submit a public clone of the repository (or a patch), with any code changes
-and `NOTES.md`. Include time spent and a brief chronological thinking log:
-what you tried, learned, changed your mind about, and left unfinished. Explain
-any AI/tool use and how you checked the results. Full chat transcripts are not
-required.
+- Starting repository; how to run your version.
+- Problems found, priorities, and root causes for changes you made.
+- Reproduction steps and tests or manual checks, including results.
+- Assumptions, rejected alternatives, deliberate omissions, and next steps with another day.
+- Time spent and an honest thinking log: what you noticed, tried, learned, changed your mind about, and left unfinished. Include failed attempts, blockers, and uncertainty. For AI/tool use, explain what you delegated, accepted or rejected, and how you checked it. Brief chronological notes are enough; full chat transcripts are not required.
 
-**Screen recording is optional.** You may use a recording with voice comments
-instead of written notes. Do not send exercise solutions as pull requests to
-the upstream repository.
+## Assessment and follow-up
 
-Good luck, and have fun.
+We assess substantive scope and reasoning, not setup effort or unfamiliar
+tooling alone. If setup consumes the timebox, document the blocker and your
+approach rather than spending extra unpaid time.
+
+In the follow-up interview, be ready to show the changed behavior and explain
+a root cause. We assess your reasoning and understanding of the submitted
+code, not your ability to recite an upstream answer.
