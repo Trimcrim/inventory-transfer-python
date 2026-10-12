@@ -177,18 +177,20 @@ the `BASE_URL` environment variable.
 2. **Find the causes.** There may be more than one cause.
 3. **Explain why** the problems only appear under load, and not when one
    developer tests the service by hand.
-4. **Propose fixes.** You can change the code if you want to, but it is not
-   required. A clear explanation of a fix is also fine.
+4. **Prioritize fixes.** Make focused code changes and verify them with
+   reproducible checks or tests, to the extent reached within the timebox.
 
 You are free to change anything: the code, the scripts, the database, the
 configuration. You can add logging, tests or tools.
 
 ## Time
 
-Plan for **2–3 hours**. Please stop when the time is up.
+Plan for **2–3 hours total**, including setup, investigation, implementation,
+and notes. Stop by three hours and submit what you have.
 
-**An honest partial answer is better than a complete answer that you cannot
-explain.** If you did not finish, tell us what you would do next.
+**Full completion is not expected. An honest partial answer is better than a
+complete answer that you cannot explain.** Record blockers, hypotheses,
+unsuccessful attempts, and unfinished work.
 
 ## AI tools
 
@@ -210,7 +212,14 @@ One file, `NOTES.md`, in the root of the repository, with these parts:
    (logging, metrics, alerts, tests).
 6. **What you did not get to** – and what you would do with more time.
 
-Plus your code changes, if you made any (a branch, a patch file or a zip of
-the repository is fine).
+Submit a public clone of the repository (or a patch), with any code changes
+and `NOTES.md`. Include time spent and a brief chronological thinking log:
+what you tried, learned, changed your mind about, and left unfinished. Explain
+any AI/tool use and how you checked the results. Full chat transcripts are not
+required.
+
+**Screen recording is optional.** You may use a recording with voice comments
+instead of written notes. Do not send exercise solutions as pull requests to
+the upstream repository.
 
 Good luck, and have fun.
