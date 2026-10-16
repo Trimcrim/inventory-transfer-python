@@ -3,7 +3,7 @@ from psycopg import AsyncConnection
 
 async def get_stock_levels(conn: AsyncConnection, sku: str) -> dict[str, int]:
     cur = await conn.execute(
-        "SELECT location, quantity FROM inventory WHERE sku = %s ORDER BY location",
+        "SELECT location, quantity FROM inventory WHERE sku = %s ORDER BY location FOR UPDATE",
         (sku,),
     )
     return {location: quantity for location, quantity in await cur.fetchall()}
